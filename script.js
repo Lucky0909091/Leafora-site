@@ -1,28 +1,27 @@
-(() => {
-  const hamburger = document.getElementById("hamburger");
-  const menuPanel = document.getElementById("menuPanel");
+(// Mobile menu toggle
+const hamburger = document.getElementById("hamburger");
+const menuPanel = document.getElementById("menuPanel");
 
-  if (!hamburger || !menuPanel) return;
-
-  const closeMenu = () => {
-    menuPanel.classList.remove("show");
-    hamburger.setAttribute("aria-expanded", "false");
-  };
-
-  hamburger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const open = menuPanel.classList.toggle("show");
-    hamburger.setAttribute("aria-expanded", String(open));
+if (hamburger && menuPanel) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = menuPanel.classList.toggle("open");
+    hamburger.setAttribute("aria-expanded", String(isOpen));
   });
 
+  // Close menu when clicking link
+  menuPanel.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuPanel.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // Close when tapping outside
   document.addEventListener("click", (e) => {
-    if (!menuPanel.contains(e.target) && !hamburger.contains(e.target)) closeMenu();
+    const clickInside = menuPanel.contains(e.target) || hamburger.contains(e.target);
+    if (!clickInside) {
+      menuPanel.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", "false");
+    }
   });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
-  });
-
-  menuPanel.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
-})();
-
+}
