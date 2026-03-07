@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Leafora Indian Traders | Eco-Friendly Palm Leaf Products</title>
   <meta name="description" content="Leafora Indian Traders offers premium eco-friendly disposable palm leaf plates with sustainable manufacturing and custom branding services." />
   <meta name="theme-color" content="#70877f" />
 
-  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -20,7 +19,7 @@
 
   <header class="top-strip">
     <div class="brand-mini">
-      <img src="./leafora-logo.png" alt="Leafora Indian Traders Logo" class="logo-mini" />
+      <img src="./images/leafora-logo.png" alt="Leafora Indian Traders Logo" class="logo-mini" />
     </div>
 
     <button class="shop-btn" type="button">Shop now</button>
@@ -41,8 +40,19 @@
   </header>
 
   <main id="main-content">
-    <section class="opening-hero container">
-      <img src="./hero-opening.png" alt="Leafora opening showcase" class="opening-hero-img" loading="eager" />
+    <section class="hero container">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./images/hero-mobile.jpg" />
+        <img src="./images/hero-desktop.jpg" alt="Leafora eco-friendly palm leaf products display" class="hero-bg" loading="eager" />
+      </picture>
+
+      <div class="hero-overlay">
+        <h1>Interested in Engraving?</h1>
+        <p>Discover unique designs with Leafora Indian Traders today.</p>
+        <p>Premium eco-friendly plates crafted for lasting impressions.</p>
+        <p>For customization details, feel free to contact us.</p>
+        <a href="#contact" class="hero-cta">Contact Us</a>
+      </div>
     </section>
 
     <section class="section card container">
@@ -78,7 +88,7 @@
     </section>
 
     <section class="section card logo-section container" id="branding">
-      <img src="./leafora-logo.png" alt="Leafora Indian Traders" class="logo-large" loading="lazy" />
+      <img src="./images/leafora-logo.png" alt="Leafora Indian Traders" class="logo-large" loading="lazy" />
       <h3>Leafora Indian Traders</h3>
       <p>Natural • Sustainable • Premium Areca Leaf Products</p>
     </section>
@@ -105,30 +115,12 @@
       <h2 class="center">Frequently Asking Questions</h2>
 
       <div class="faq-list">
-        <details>
-          <summary>Who are the Best Palm Plates Exporters in India?<span>+</span></summary>
-          <p>Leafora Indian Traders focuses on quality eco-friendly exports and sustainable manufacturing.</p>
-        </details>
-        <details>
-          <summary>Where can I find the best disposable party plates?<span>+</span></summary>
-          <p>Choose premium areca leaf plates from trusted sustainable brands like Leafora.</p>
-        </details>
-        <details>
-          <summary>Who Are the Top Areca Leaf Raw Material Suppliers in India?<span>+</span></summary>
-          <p>Top suppliers are usually from arecanut-growing regions with reliable processing practices.</p>
-        </details>
-        <details>
-          <summary>Who are the Best Areca Leaf Plate Manufacturers in India?<span>+</span></summary>
-          <p>Manufacturers with hygienic facilities and export quality checks stand out.</p>
-        </details>
-        <details>
-          <summary>Who Is the Leading Palm Leaf Plate Exporter in India?<span>+</span></summary>
-          <p>Leading exporters combine scale, consistency, and sustainable sourcing.</p>
-        </details>
-        <details>
-          <summary>Are Palm Leaf Plates Eco Friendly ?<span>+</span></summary>
-          <p>Yes. They are biodegradable, compostable, and made from naturally fallen leaves.</p>
-        </details>
+        <details><summary>Who are the Best Palm Plates Exporters in India?<span>+</span></summary><p>Leafora Indian Traders focuses on quality eco-friendly exports and sustainable manufacturing.</p></details>
+        <details><summary>Where can I find the best disposable party plates?<span>+</span></summary><p>Choose premium areca leaf plates from trusted sustainable brands like Leafora.</p></details>
+        <details><summary>Who Are the Top Areca Leaf Raw Material Suppliers in India?<span>+</span></summary><p>Top suppliers are usually from arecanut-growing regions with reliable processing practices.</p></details>
+        <details><summary>Who are the Best Areca Leaf Plate Manufacturers in India?<span>+</span></summary><p>Manufacturers with hygienic facilities and export quality checks stand out.</p></details>
+        <details><summary>Who Is the Leading Palm Leaf Plate Exporter in India?<span>+</span></summary><p>Leading exporters combine scale, consistency, and sustainable sourcing.</p></details>
+        <details><summary>Are Palm Leaf Plates Eco Friendly ?<span>+</span></summary><p>Yes. They are biodegradable, compostable, and made from naturally fallen leaves.</p></details>
       </div>
     </section>
 
@@ -142,4 +134,4 @@
   <button class="chat-float" aria-label="Chat">💬</button>
   <script src="./script.js"></script>
 </body>
-</html> 
+</html>
