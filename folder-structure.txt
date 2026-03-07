@@ -1,11 +1,11 @@
-leafora-website/
+Leafora-site/
 ├── index.html
 ├── styles.css
 ├── script.js
-├── folder-structure.txt
-└── assets/
-    ├── leafora-logo.png
+└── images/
     ├── favicon.png
+    ├── leafora-logo.png
+    ├── hero-desktop.jpg
+    ├── hero-mobile.jpg
     ├── bg-plates-1.jpg
-    ├── bg-plates-2.jpg
-    └── hero-opening.png
+    └── bg-plates-2.jpg
