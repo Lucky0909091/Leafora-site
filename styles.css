@@ -21,6 +21,7 @@ body.bg-blend{
     linear-gradient(120deg, rgba(129,156,134,0.18), rgba(212,197,163,0.22)),
     url("assets/bg-plates-1.jpg"),
     url("assets/bg-plates-2.jpg");
+}
   background-size:cover,cover,cover,cover;
   background-position:center center,center center,center top,center bottom;
   background-repeat:no-repeat,no-repeat,no-repeat,no-repeat;
