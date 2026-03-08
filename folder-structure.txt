@@ -1,1 +1,9 @@
-
+├─ index.html
+├─ styles.css
+├─ script.js
+└─ assets/
+   ├─ favicon.png
+   ├─ leafora-logo.png
+   ├─ hero-opening.png
+   ├─ bg-plates-1.jpg
+   └─ bg-plates-2.jpg
