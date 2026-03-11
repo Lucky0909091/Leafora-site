@@ -1,0 +1,20 @@
+Leafora site 1/
+│
+├── index.html
+├── styles.css
+├── script.js
+│
+├── favicon.png
+├── leafora-logo.png
+├── hero-opening.png
+│
+├── bg-plates-1.jpg
+├── bg-plates-2.jpg
+│
+├── product-1.jpg
+├── product-2.jpg
+├── product-3.jpg
+├── product-4.jpg
+├── product-5.jpg
+│
+└── Catalog.pdf
